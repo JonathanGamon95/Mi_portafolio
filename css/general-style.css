@@ -4,6 +4,10 @@
     font-style: normal;
 }
 
+body {
+    background-color: #100420;
+}
+
 .MENU {
     box-shadow: 1px -1px 37px 9px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px -1px 37px 9px rgba(0, 0, 0, 0.75);
@@ -11,11 +15,11 @@
 }
 
 
+#body,
 .tittle,
 .title-section,
 .skills,
-.tittle-project,
-.background {
+.tittle-project {
     transition: 0.5s;
 }
 
@@ -129,7 +133,7 @@ p,
     top: 0;
     left: 0;
     z-index: -1;
-    background: #100420;
+    /* background: #100420; */
     overflow: hidden;
 }
 

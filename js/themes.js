@@ -1,5 +1,5 @@
 const BOTON_TEMA = document.getElementById("BOTON_TEMA");
-const BACKGROUND = document.getElementById("BG_ANIMADO");
+const BODY = document.getElementById("body")
 
 const ETIQUETAS_P = document.querySelectorAll("p");
 const ETIQUETAS_H1 = document.querySelectorAll("h1");
@@ -9,7 +9,7 @@ let tema_actual = "tema-oscuro"
 function cambio_de_tema() {
     if (tema_actual === "tema-oscuro") {
         BOTON_TEMA.style.background = "#100420"
-        BACKGROUND.style.background = "#b2babb"
+        BODY.style.background = "#b2babb"
         SPAM_TITULO.style.color = "#ba4a00"
         
         for (let i of ETIQUETAS_P) {
@@ -23,7 +23,7 @@ function cambio_de_tema() {
         tema_actual = "tema-claro"
     } else {
         BOTON_TEMA.style.background = "#fff"
-        BACKGROUND.style.background = "#100420"
+        BODY.style.background = "#100420"
         SPAM_TITULO.style.color = "#f1c40f"
 
         for (let i of ETIQUETAS_P) {

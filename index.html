@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./imagenes/inicio/foto-dibujo.png">
-    <!--taildwind librery-->
-    <link rel="stylesheet" href="./css/general-style.css">
+    
     <!--scroll librery-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -19,13 +17,19 @@
         rel="stylesheet">
     <!--Google-fons-styles-->
 
+
+    <!-- tailwind -->
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/general-style.css">
+
     <title>Jonathan Gamon</title>
 </head>
 
 <body id="body">
 
     <header class="fixed top-0 w-full h-[50px] flex justify-center items-center z-10">
-        <div class="MENU w-[300px] h-[30px] bg-[#fff] rounded-full grid grid-cols-4 grid-rows-1 gap-0 backdrop-blur-[3px] bg-white bg-opacity-30">
+        <div class="MENU w-[300px] h-[30px] bg-[#fff] rounded-full grid grid-cols-4 grid-rows-1 gap-0">
             <p id="BOTON_INICIO"    class="cursor-pointer text-[#fff] text-[15px] m-auto select-none">Inicio</p>
             <p id="BOTON_PROYECTOS" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none">Proyectos</p>
             <p id="BOTON_SOBRE_MI"  class="cursor-pointer text-[#fff] text-[15px] m-auto select-none">Sobre Mi</p>
@@ -46,15 +50,14 @@
         <p class="row-start-3 text-center" style="margin: auto;">Desarrollador Front-End Apasionado por Crear Interfaces Visuales y Funcionales que Enamoran al Usuario</p>
 
         <div class="cont-img-perfil-ext row-start-4 flex">
-            <div class="cont-img-perfil  w-[60px] h-[60px] sm:w-[90px] sm:h-[90px] rounded-full overflow-hidden" style="margin: auto 0;"><img src="./imagenes/inicio/foto-dibujo.png" alt="foto-perfil"></div>
+            <div class="cont-img-perfil  w-[60px] h-[60px] sm:w-[90px] sm:h-[90px] rounded-full overflow-hidden" style="margin: auto 0;"><img src="./src/assest/imagenes/inicio/foto-dibujo.png" alt="foto-perfil"></div>
             <div class="disponibilidad text-sm rounded-full p-3" style="margin: auto auto 10px 20px;">Disponible Para Trabajar</div>
         </div>
 
         <div class="row-start-5 flex justify-start">
             <a href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank" style="margin: auto 5px;"><button class="bg-[#76448a] text-[#fff] w-[100px] h-[30px] sm:w-[120px] sm:h-[40px] rounded-lg shadow-md flex items-center justify-center gap-2"><i class="fa-brands fa-linkedin"></i>Linkedin</button></a>
             <a href="https://github.com/JonathanGamon95" target="_blank" style="margin: auto 5px;"><button class="bg-[#76448a] text-[#fff] w-[100px] h-[30px] sm:w-[120px] sm:h-[40px] rounded-lg shadow-md flex items-center justify-center gap-2" style="margin: auto 5px;"><i class="fa-brands fa-github"></i>GidHub</button></a>
-            <!-- <button id="CV_BUTTON" class="bg-[#76448a] text-[#fff] w-[100px] h-[30px] sm:w-[120px] sm:h-[40px] rounded-lg shadow-md flex items-center justify-center gap-2" style="margin: auto 5px;"><i class="fa-solid fa-download"></i>Mi CV</button> -->
-             <a href="./CV/JonathanGamon-CV.pdf" target="_blank" style="margin: auto 5px;"><button class="bg-[#76448a] text-[#fff] w-[100px] h-[30px] sm:w-[120px] sm:h-[40px] rounded-lg shadow-md flex items-center justify-center gap-2" style="margin: auto 5px;"><i class="fa-brands fa-github"></i>Mi CV</button></a>
+            <a href="./CV/JonathanGamon-CV.pdf" target="_blank" style="margin: auto 5px;"><button class="bg-[#76448a] text-[#fff] w-[100px] h-[30px] sm:w-[120px] sm:h-[40px] rounded-lg shadow-md flex items-center justify-center gap-2" style="margin: auto 5px;"><i class="fa-solid fa-download"></i>Mi CV</button></a>
         </div>
 
 
@@ -101,7 +104,7 @@
 
         <!-- WAATER APP -->
         <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 grid-rows-8 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 h-[600px] sm:h-[300px] my-[100px]">
-            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./imagenes/img-portafolio/app wather.png" alt="img-portafolio">
+            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./src/assest/imagenes/img-portafolio/app wather.png" alt="img-portafolio">
             
             <aside class="row-span-4 row-start-5 sm:col-start-2 sm:row-span-1 grid grid-cols-1 grid-rows-5">
                 <h1 class="tittle-project my-auto text-[#fff] text-xl">Weather App</h1>
@@ -134,7 +137,7 @@
 
         <!-- LANDIG ART DIGITAL 2.0-->
         <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 grid-rows-8 sm:grid-cols-2 sm:grid-rows-1 gap-1 sm:gap-5 h-[600px] sm:h-[300px] my-[100px]">
-            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./imagenes/img-portafolio/landing-page-arte-digital-2.0.png" alt="img-portafolio">
+            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./src/assest/imagenes/img-portafolio/landing-page-arte-digital-2.0.png" alt="img-portafolio">
             
             <aside class="row-span-4 row-start-5 sm:col-start-2 sm:row-span-1 grid grid-cols-1 grid-rows-5">
                 <h1 class="tittle-project my-auto text-[#fff] text-xl">Landing Page Arte Digital V.2</h1>
@@ -171,7 +174,7 @@
 
         <!-- LANDIG ART DIGITAL-->
         <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 grid-rows-8 sm:grid-cols-2 sm:grid-rows-1 gap-1 sm:gap-5 h-[600px] sm:h-[300px] my-[100px]">
-            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./imagenes/img-portafolio/landig-page-artDigital.jpg" alt="img-portafolio">
+            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./src/assest/imagenes/img-portafolio/landig-page-artDigital.jpg" alt="img-portafolio">
             
             <aside class="row-span-4 row-start-5 sm:col-start-2 sm:row-span-1 grid grid-cols-1 grid-rows-5">
                 <h1 class="tittle-project my-auto text-[#fff] text-xl">Landing Page Arte Digital V.1</h1>
@@ -201,7 +204,7 @@
 
         <!-- LANDING BARBERIA -->
         <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 grid-rows-8 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 h-[600px] sm:h-[300px] my-[100px]">
-            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./imagenes/img-portafolio/Barberia.png" alt="img-portafolio">
+            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./src/assest/imagenes/img-portafolio/Barberia.png" alt="img-portafolio">
             
             <aside class="row-span-4 row-start-5 sm:col-start-2 sm:row-span-1 grid grid-cols-1 grid-rows-5">
                 <h1 class="tittle-project my-auto text-[#fff] text-xl">Barberia - Landing Page</h1>
@@ -233,7 +236,7 @@
 
         <!-- POKEDEX -->
         <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 grid-rows-8 sm:grid-cols-2 sm:grid-rows-1 gap-1 sm:gap-5 h-[600px] sm:h-[300px] my-[100px]">
-            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./imagenes/img-portafolio/pokedex_react.jpg" alt="img-portafolio">
+            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./src/assest/imagenes/img-portafolio/pokedex_react.jpg" alt="img-portafolio">
             
             <aside class="row-span-4 row-start-5 sm:col-start-2 sm:row-span-1 grid grid-cols-1 grid-rows-5">
                 <h1 class="tittle-project my-auto text-[#fff] text-xl">Pokedex</h1>
@@ -294,7 +297,7 @@
 
 
         <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 grid-rows-8 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 h-[600px] sm:h-[300px] my-[100px]">
-            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./imagenes/img-portafolio/galeria_slider.jpg" alt="img-portafolio">
+            <img class="row-span-4 sm:row-span-1 h-[100%] rounded-[10px] overflow-hidden m-auto" src="./src/assest/imagenes/img-portafolio/galeria_slider.jpg" alt="img-portafolio">
             
             <aside class="row-span-4 row-start-5 sm:col-start-2 sm:row-span-1 grid grid-cols-1 grid-rows-5">
                 <h1 class="tittle-project my-auto text-[#fff] text-xl">Galeria slider Animado</h1>
@@ -339,7 +342,7 @@
 
 
             <div data-aos="fade-left" data-aos-duration="1000" class="row-span-3 row-start-5 sm:row-span-3 sm:col-start-2 sm:row-start-3 flex justify-center items-center flex-col gap-5">
-                <img class="w-[200px] rounded-[20px]" src="./imagenes/inicio/foto-dibujo.png" alt="foto-perfil">
+                <img class="w-[200px] rounded-[20px]" src="./src/assest/imagenes/inicio/foto-dibujo.png" alt="foto-perfil">
 
                 <div class="row-start-5 flex justify-start">
                     <a href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank" style="margin: auto 5px;"><button class="bg-[#76448a] text-[#fff] w-[100px] h-[30px] sm:w-[120px] sm:h-[40px] rounded-lg shadow-md flex items-center justify-center gap-2"><i class="fa-brands fa-linkedin"></i>Linkedin</button></a>
@@ -393,8 +396,8 @@
 
 
 
-    <script src="./js/scroll_header_animation.js"></script>
-    <script src="./js/themes.js"></script>
+    <script src="./src/js/scroll_header_animation.js"></script>
+    <script src="./src/js/themes.js"></script>
 
 
     <!--icon skills-->

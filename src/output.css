@@ -243,9 +243,6 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-\[20px\] {
     height: 20px;
   }
@@ -300,14 +297,8 @@
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -357,9 +348,6 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -381,10 +369,6 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -393,23 +377,12 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
-  .border-3 {
-    border-style: var(--tw-border-style);
-    border-width: 3px;
-  }
-  .border-\[0\.5\] {
-    border-style: var(--tw-border-style);
-    border-width: 0.5;
-  }
   .border-solid {
     --tw-border-style: solid;
     border-style: solid;
   }
   .border-\[\#0D5EA6\] {
     border-color: #0D5EA6;
-  }
-  .border-\[\#D96F32\] {
-    border-color: #D96F32;
   }
   .border-\[\#fff\] {
     border-color: #fff;
@@ -420,17 +393,8 @@
   .bg-\[\#2471a3\] {
     background-color: #2471a3;
   }
-  .bg-\[\#065084\] {
-    background-color: #065084;
-  }
   .bg-\[\#76448a\] {
     background-color: #76448a;
-  }
-  .bg-\[\#D96F32\] {
-    background-color: #D96F32;
-  }
-  .bg-\[\#F0E4D3\] {
-    background-color: #F0E4D3;
   }
   .bg-\[\#fff\] {
     background-color: #fff;
@@ -494,16 +458,9 @@
   .text-\[\#fff\] {
     color: #fff;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .select-none {
     -webkit-user-select: none;
@@ -708,11 +665,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -731,7 +683,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
     }
   }
 }

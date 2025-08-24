@@ -1,5 +1,7 @@
 const BOTON_TEMA = document.getElementById("BOTON_TEMA");
 const BODY = document.getElementById("body")
+const CONTAINER_HERO = document.getElementById("container_hero")
+const ABOUT_ME = document.getElementById("ABOUT_ME");
 
 const ETIQUETAS_P = document.querySelectorAll("p");
 const ETIQUETAS_H1 = document.querySelectorAll("h1");
@@ -10,6 +12,8 @@ function cambio_de_tema() {
     if (tema_actual === "tema-oscuro") {
         BOTON_TEMA.style.background = "#100420"
         BODY.style.background = "#b2babb"
+        CONTAINER_HERO.style.backgroundColor = "#ffffff8f"
+        ABOUT_ME.style.backgroundColor = "#ffffff8f"
         SPAM_TITULO.style.color = "#ba4a00"
         
         for (let i of ETIQUETAS_P) {
@@ -24,6 +28,8 @@ function cambio_de_tema() {
     } else {
         BOTON_TEMA.style.background = "#fff"
         BODY.style.background = "#100420"
+        CONTAINER_HERO.style.backgroundColor = "#3421db4d"
+        ABOUT_ME.style.backgroundColor = "#3421db4d"
         SPAM_TITULO.style.color = "#f1c40f"
 
         for (let i of ETIQUETAS_P) {

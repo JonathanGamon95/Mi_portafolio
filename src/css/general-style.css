@@ -5,12 +5,25 @@ body {
     background-color: #100420;
 }
 
+.container-hero,
+.ABOUT-ME {
+    background-color: #3421db4d;
+}
+
+.MENU {
+    background: rgba(255, 255, 255, 0.1);
+}
+
 
 /* ------------------------------
     Elementos interactivos
    ------------------------------ */
 button {
     cursor: pointer;
+}
+
+#BOTON_TEMA:active {
+    transform: scale(1.2);
 }
 
 
@@ -30,19 +43,21 @@ button {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* soporte Safari */
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+
+
+/* ------------------------------
+    border
+   ------------------------------ */
+.MENU,
 .container-hero,
-.ABOUT-ME {
-    background-color: #3421db4d;
-}
-
-.MENU {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-}
+.ABOUT-ME,
+.img-perfil,
+.skills-container-inside,
+main {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+ }
 
 
 /* ------------------------------
@@ -58,17 +73,25 @@ p,
     transition: 0.5s;
 }
 
+#BOTON_TEMA {
+    transition: 0.1s;
+}
+
 
 /* ------------------------------
     Tipografía en títulos/secciones
 ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-
+.MENU p,
 .title,
 .text-skill,
 .text-tools,
-.tittle-project {
-    font-family: sans-serif;
+.tittle-project,
+.about-title,
+.about-me,
+.about-contact {
+    font-family: 'Inter', sans-serif;
 }
 
 

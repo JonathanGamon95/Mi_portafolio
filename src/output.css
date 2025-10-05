@@ -347,6 +347,9 @@
   .border-\[\#0D5EA6\] {
     border-color: #0D5EA6;
   }
+  .border-\[\#dd1616\] {
+    border-color: #dd1616;
+  }
   .border-white\/30 {
     border-color: color-mix(in srgb, #fff 30%, transparent);
     @supports (color: color-mix(in lab, red, red)) {

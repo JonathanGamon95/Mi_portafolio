@@ -45,85 +45,164 @@
     sm:h-screen
     flex items-center justify-center relative">
         <div id="container_hero" class="container-hero 
-        w-full h-full sm:max-w-[1000px] sm:h-auto md:h-[700px] p-4 sm:rounded-2xl
+        w-full h-full sm:max-w-[1200px] sm:h-auto p-4 sm:rounded-2xl
         sm:grid grid-cols-3 md:grid-cols-4 grid-rows-4 gap-4">
             <br class="sm:hidden">
             <br class="sm:hidden">
-            <div class="sm:col-span-2 md:col-span-3 col-start-2 sm:order-2
-            m-auto text-center sm:text-start">
-                <h1 class="title
-                text-3xl sm:text-4xl">Hola, me llamo <span class="text-[#f1c40f]">Jonathan Gamon</span></h1>
-                <br>
-                <p><strong>Desarrollador Front-End</strong> Apasionado por Crear Interfaces Visuales y Funcionales que
-                    Enamoran al
-                    Usuario</p>
-            </div>
+            <br class="sm:hidden">
             <br class="sm:hidden">
 
-            <!-- img and social networks -->
-            <div class="container-img-networs
-            sm:row-span-2 sm:order-1">
-                <img class="img-perfil w-[90px] h-[90px] sm:w-[120px] sm:h-[120px] rounded-full overflow-hidden mt-auto mb-0 object-cover object-center"
-                    src="./src/assest/imagenes/inicio/foto-dibujo.png" alt="photo-perfil">
+            <!-- cont perfil redes -->
+            <div class="
+            flex flex-col items-center sm:items-start gap-2
+            text-center
+            sm:row-span-3">
+                <img class="
+                w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-center 
+                border-4 border-yellow-500/30 shadow-2xl 
+                transition-all duration-300 hover:scale-105 hover:border-yellow-500/60"
+                    src="./src/assest/imagenes/inicio/foto-dibujo.png" alt="img-perfil">
                 <br>
-                <div class="container-buttons-hero">
-                    <button class="btn-availability">Disponible Para Trabajar</button>
-                    <br>
-                    <br>
-                    <div class="flex gap-2">
-                        <a href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank" class="btn-network">Linkedin <i class="bi bi-linkedin"></i></a>
-                        <a href="./CV/JonathanGamon-CV.pdf" target="_blank" class="btn-network">CV <i class="bi bi-file-earmark-arrow-down-fill"></i></a>
-                    </div>
-                    <br>
-                    <a href="https://wa.me/541159541014" target="_blank" class="btn-network">Mi <i class="fa-brands fa-whatsapp"></i></a>
-                </div>
+                <button
+                    class="
+                    w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">Disponible
+                    para trabajar</button>
+
+                <a class="
+                flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                text-white font-medium
+                bg-[#2c2c54] shadow-2xl 
+                transition-all hover:shadow-xl hover:-translate-y-1"
+                    href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank">
+                    <span>LinkedIn</span>
+                    <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a class="
+                flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                text-white font-medium
+                bg-[#2c2c54] shadow-2xl 
+                transition-all hover:shadow-xl hover:-translate-y-1" href="./CV/JonathanGamon-CV.pdf" target="_blank">
+                    <span>Descargar CV</span>
+                    <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                </a>
+
+                <a class="
+                flex items-center justify-center gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                text-white font-medium
+                bg-[#2c2c54] shadow-2xl 
+                transition-all hover:shadow-xl hover:-translate-y-1" href="https://wa.me/541159541014" target="_blank">
+                    <span>WhatsApp</span>
+                    <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
-            <br class="sm:hidden">
 
-            <div class="col-span-3 col-start-2 row-start-2
-            m-auto text-center sm:text-start">
-
-                <br class="sm:hidden">
-                <p><span class="text-3xl">☕</span> Con experiencia en <strong>HTML, CSS, JavaScript, React y Tailwind
-                        CSS</strong>. Desde 2021,
-                    me dedico a crear interfaces modernas, eficientes y accesibles para el usaurio, siempre explorando
-                    nuevas
-                    tecnologías para mejorar cada proyecto.</p>
+            <!-- contenido principal -->
+            <div class="col-span-3 row-span-4 col-start-2 p-2">
                 <br>
-                <p><span class="text-2xl sm:text-4xl">💡</span>¿Tienes una idea? ¡Hagámosla realidad!</p>
-            </div>
-            <br class="sm:hidden">
+                <h1 class="
+                title
+                text-4xl md:text-5xl font-bold leading-tight
+                text-center sm:text-start">
+                    Hola, me llamo <span id="nombre_portafolio" class="text-[#f1c40f]"
+                        style="color: rgb(241, 196, 15);">Jonathan Gamon</span>
+                </h1>
+                <br>
+                <p class="mt-4 text-2xl md:text-2xl text-gray-200 text-center sm:text-start max-w-3xl">
+                    <strong class="font-semibold">Desarrollador Front-End</strong> apasionado por crear interfaces
+                    visuales y funcionales que enamoran al usuario
+                </p>
+                <br>
+                <p class="flex items-start space-x-3">
+                    <span class="text-2xl mt-1">☕</span>
+                    <span>
+                        Con experiencia en <strong class="font-semibold">HTML, CSS, JavaScript, React y
+                            Tailwind CSS</strong>.
+                        Desde 2021, me dedico a crear interfaces modernas, eficientes y accesibles para el usuario,
+                        siempre explorando nuevas tecnologías para mejorar cada proyecto.
+                    </span>
+                </p>
+                <br>
+                <p id="texto_idea" class="flex items-center space-x-3 text-yellow-400 font-semibold text-xl">
+                    <span class="text-2xl">💡</span>
+                    <span>¿Tienes una idea? ¡Hagámosla realidad!</span>
+                </p>
+                <br>
+                <!-- Habilidades y herramientas -->
+                <div id="skills_containers" class="rounded-2xl p-6 border border-white/10 text-white">
+                    <!-- Habilidades -->
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold mb-4 flex items-center space-x-2">
+                            <i class="bi bi-code-slash text-yellow-400"></i>
+                            <span>Habilidades y Tecnologías</span>
+                        </h3>
 
-            <!-- skills -->
-            <div class="skills-container
-            col-span-3 row-span-2 col-start-2 row-start-3
-            flex items-center">
-                <div class="skills-container-inside w-full h-auto rounded-2xl bg-[#f8fafc45]">
-                    <div class="p-4">
-                        <div class="skills">
-                            <h1 class="text-skill text-xl"><i class="bi bi-code-slash"></i> Habilidades y Tecnologias</h1>
-                            <br>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
                             <div
-                                class="grid md:block [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-[10px]">
-                                <span class="text-center"><i class="fa-brands fa-html5"></i> HTML</span>
-                                <span class="text-center"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                                <span class="text-center"><i class="fa-brands fa-square-js"></i> JS</span>
-                                <span class="text-center"><i class="fa-brands fa-react"></i> REACT</span>
-                                <span class="text-center">🪶 TAILWIND</span>
+                                class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
+                                <i class="fab fa-html5 text-3xl text-orange-500"></i>
+                                <span class="font-medium">HTML</span>
+                            </div>
+
+                            <div
+                                class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
+                                <i class="fab fa-css3-alt text-3xl text-blue-500"></i>
+                                <span class="font-medium">CSS</span>
+                            </div>
+
+                            <div
+                                class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
+                                <i class="fab fa-js-square text-3xl text-yellow-400"></i>
+                                <span class="font-medium">JavaScript</span>
+                            </div>
+
+                            <div
+                                class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
+                                <i class="fab fa-react text-3xl text-cyan-400"></i>
+                                <span class="font-medium">React</span>
+                            </div>
+
+                            <div
+                                class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
+                                <span class="text-3xl">🪶</span>
+                                <span class="font-medium">Tailwind</span>
                             </div>
                         </div>
-                        <br>
-                        <hr class="border border-white/30">
-                        <br>
-                        <div class="tools">
-                            <h1 class="text-tools text-xl"><i class="bi bi-code-slash"></i> Herramientas</h1>
-                            <br>
+                    </div>
+
+                    <!-- Separador -->
+                    <hr class="line my-6">
+
+                    <!-- Herramientas -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 flex items-center space-x-2">
+                            <i class="bi bi-tools text-yellow-400"></i>
+                            <span>Herramientas</span>
+                        </h3>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
                             <div
-                                class="grid sm:block [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-[10px]">
-                                <span class="text-center"><i class="fa-brands fa-figma"></i> FIGMA</span>
-                                <span class="text-center"><i class="fa-brands fa-github"></i> GITHUB</span>
-                                <span class="text-center"><i class="fa-brands fa-git-alt"></i> GIT</span>
-                                <span class="text-center">🖥️ VSC</span>
+                                class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
+                                <i class="fab fa-figma text-3xl text-purple-500"></i>
+                                <span class="font-medium">Figma</span>
+                            </div>
+
+                            <div
+                                class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
+                                <i class="fab fa-github text-3xl text-gray-300"></i>
+                                <span class="font-medium">GitHub</span>
+                            </div>
+
+                            <div
+                                class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
+                                <i class="fab fa-git-alt text-3xl text-orange-600"></i>
+                                <span class="font-medium">Git</span>
+                            </div>
+
+                            <div
+                                class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
+                                <span class="text-3xl">🖥️</span>
+                                <span class="font-medium">VSC</span>
                             </div>
                         </div>
                     </div>
@@ -131,7 +210,7 @@
             </div>
         </div>
 
-        <h1 class="arrow-down-home hidden sm:block absolute bottom-8 text-center text-3xl text-[#fff]"><i
+        <h1 class="arrow-down-home hidden sm:block absolute bottom-2 text-center text-3xl text-[#fff]"><i
                 class="bi bi-caret-down-fill"></i></h1>
     </section>
 
@@ -144,10 +223,6 @@
 
     <section id="PROYECTOS" class="PROYECTOS sm:max-w-[800px] pt-9 px-5 sm:px-0 sm:py-8" style="margin: auto;">
         <h1 class="title-section row-start-1 text-[#fff] text-3xl mt-6"><i class="fa-solid fa-code"></i> Proyectos</h1>
-
-
-
-
 
         <!-- WAATER APP -->
         <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
@@ -177,8 +252,7 @@
                 <div class="
                 grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
                     <a href="https://jonathangamon95.github.io/Weather-app/" target="_blank">
-                        <button
-                            class="
+                        <button class="
                             previe-buttom
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
@@ -186,7 +260,7 @@
                             rounded-lg shadow-md 
                             py-2 px-8 
                             flex items-center justify-center gap-2">Review</button></a>
-                            <button class="
+                    <button class="
                             pc-buttom
                             border border-solid border-[#dd1616] 
                             text-[#fff] text-xs 
@@ -237,8 +311,7 @@
                 <br>
                 <div class="
                 grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/landing-page-Barberia-V2/" target="_blank"><button
-                            class="
+                    <a href="https://jonathangamon95.github.io/landing-page-Barberia-V2/" target="_blank"><button class="
                             bg-[#093FB4] 
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
@@ -270,7 +343,8 @@
             <aside class="flex flex-col">
                 <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - ECOMMERCE V.1 (en curso)</h1>
                 <br>
-                <p class="row-span-2 row-start-2">Diseño de una landing page para una tienda online de un emprendimiento dedicado a la venta de bolsos elegantes</p>
+                <p class="row-span-2 row-start-2">Diseño de una landing page para una tienda online de un emprendimiento
+                    dedicado a la venta de bolsos elegantes</p>
                 <br>
                 <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
                     <div class="text-xs text-center flex items-center justify-center gap-1"><i
@@ -285,8 +359,7 @@
                 <div class="
                 grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
                     <a href="https://jonathangamon95.github.io/Landing-page-Tienda-online-V1/" target="_blank">
-                        <button
-                            class="previe-buttom
+                        <button class="previe-buttom
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
                             h-[40px]
@@ -343,9 +416,9 @@
                 <br>
                 <div class="
                 grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/Dise-o---Landing-Page-Arte-Digital---V.3/" target="_blank">
-                        <button
-                            class="previe-buttom
+                    <a href="https://jonathangamon95.github.io/Dise-o---Landing-Page-Arte-Digital---V.3/"
+                        target="_blank">
+                        <button class="previe-buttom
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
                             h-[40px]
@@ -398,8 +471,7 @@
                 <div class="
                 grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
                     <a href="https://jonathangamon95.github.io/Wep-App-Music-React-Vite/" target="_blank">
-                        <button
-                            class="
+                        <button class="
                             previe-buttom
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
@@ -434,7 +506,8 @@
             <aside class="flex flex-col">
                 <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - BARBERIA V.1</h1>
                 <br>
-                <p class="row-span-2 row-start-2">Diseño de una landing page enfocada a una Barberia online, con enlaces a redes
+                <p class="row-span-2 row-start-2">Diseño de una landing page enfocada a una Barberia online, con enlaces
+                    a redes
                     sociales y formulario para obtencion de turno online - totalmente responsive</p>
                 <br>
                 <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
@@ -450,8 +523,7 @@
                 <div class="
                 grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
                     <a href="https://jonathangamon95.github.io/barberia-landing/" target="_blank">
-                        <button
-                            class="previe-buttom
+                        <button class="previe-buttom
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
                             h-[40px]
@@ -538,8 +610,7 @@
                 <div class="
                 grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
                     <a href="https://jonathangamon95.github.io/juego_adivinar_la_palabra_2.0/" target="_blank">
-                        <button
-                            class="
+                        <button class="
                             bg-[#093FB4] 
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
@@ -547,7 +618,7 @@
                             rounded-lg shadow-md 
                             py-2 px-8 
                             flex items-center justify-center gap-2">Review</button></a>
-                            <button class="
+                    <button class="
                             pc-buttom
                             border border-solid border-[#dd1616] 
                             text-[#fff] text-xs 
@@ -577,24 +648,29 @@
     <section id="SOBRE_MI" class="sm:h-screen
     flex items-center justify-center">
         <div id="ABOUT_ME" class="ABOUT-ME
-        w-full sm:w-[1000px] sm:min-h-[700px] p-4 sm:rounded-2xl">
+        w-full h-full sm:max-w-[1200px] sm:h-auto p-4 sm:rounded-2xl">
             <br class="sm:hidden">
             <br class="sm:hidden">
             <br class="sm:hidden">
-            <div class="text-center py-4 rounded-2xl bg-[#4f46e55e]">
-                <h1 class="about-title text-2xl sm:text-4xl">Jonathan Gamon</h1>
+            <div class="text-center py-4 rounded-2xl">
+                <h1 class="about-title text-3xl sm:text-4xl">Jonathan Gamon</h1>
                 <br>
-                <p class="sm:text-xl"><i class="bi bi-code-slash"></i> Desarrollador Frontend</p>
+                <p class="sm:text-xl"><i class="bi bi-code-slash text-yellow-400"></i> Desarrollador Frontend</p>
             </div>
             <br>
-            <img class="img-perfil w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] mx-auto rounded-full overflow-hidden mt-auto mb-0 object-cover object-center bg-[#000]"
-                src="./src/assest/imagenes/inicio/foto-dibujo.png" alt="photo-perfil">
+            <div class="flex justify-center">
+                <img class="
+                w-32 h-32 md:w-40 md:h-40 rounded-full object-cover object-center 
+                border-4 border-yellow-500/30 shadow-2xl 
+                transition-all duration-300 hover:scale-105 hover:border-yellow-500/60"
+                    src="./src/assest/imagenes/inicio/foto-dibujo.png" alt="img-perfil">
+            </div>
             <br>
             <div class="grid grid-cols-1 grid-rows-[1fr auto] sm:grid-cols-2 sm:grid-rows-1 gap-8">
                 <div class="AboutMe">
                     <h1 class="about-me text-xl">Sobre Mi</h1>
                     <br>
-                    <hr>
+                    <hr class="line">
                     <br>
                     <p>Desde 2021 me he dedicado a aprender y crecer en el mundo del desarrollo web de forma
                         autodidacta. Trabajo especialmente con JavaScript, HTML, CSS, Frameworks como React y Tailwind,
@@ -612,20 +688,46 @@
                 <div>
                     <h1 class="about-contact text-xl">Contacto</h1>
                     <br>
-                    <hr>
+                    <hr class="line">
                     <br>
-                    <div class="p-4 rounded-2xl bg-[#f8fafc45]">
-                        <p class="text-xl"><i class="fa-solid fa-envelope" aria-hidden="true"></i> jonygamon@gmail.com
-                        </p>
+                    <div class="
+                    flex flex-col gap-2
+                    p-4 rounded-2xl">
+                        <p class="text-xl text-center"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            jonygamon@gmail.com</p>
                         <br>
-                        <a href="https://wa.me/541159541014" target="_blank" class="btn-network">Mi <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank" class="btn-network">Linkedin <i class="bi bi-linkedin"></i></a>
-                        <a href="./CV/JonathanGamon-CV.pdf" target="_blank" class="btn-network">CV <i class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                        <a class="
+                        flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                        text-white font-medium
+                        bg-[#2c2c54] shadow-2xl 
+                        transition-all hover:shadow-xl hover:-translate-y-1"
+                            href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank">
+                            <span>LinkedIn</span>
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a class="
+                        flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                        text-white font-medium
+                        bg-[#2c2c54] shadow-2xl 
+                        transition-all hover:shadow-xl hover:-translate-y-1" href="./CV/JonathanGamon-CV.pdf" target="_blank">
+                            <span>Descargar CV</span>
+                            <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                        </a>
+
+                        <a class="
+                        flex items-center justify-center gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                        text-white font-medium
+                        bg-[#2c2c54] shadow-2xl 
+                        transition-all hover:shadow-xl hover:-translate-y-1" href="https://wa.me/541159541014" target="_blank">
+                            <span>WhatsApp</span>
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
             </div>
             <br>
-            <hr>
+            <hr class="line">
             <br>
             <p class="text-center">© 2025 Jonathan Gamon. Todos los derechos reservados.</p>
             <br class="sm:hidden">

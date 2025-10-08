@@ -46,7 +46,7 @@
     flex items-center justify-center relative">
         <div id="container_hero" class="container-hero 
         w-full h-full sm:max-w-[1200px] sm:h-auto p-4 sm:rounded-2xl
-        sm:grid grid-cols-3 md:grid-cols-4 grid-rows-4 gap-4">
+        sm:grid grid-cols-3 md:grid-cols-4 grid-rows-4 gap-x-6">
             <br class="sm:hidden">
             <br class="sm:hidden">
             <br class="sm:hidden">
@@ -221,97 +221,53 @@
 
 
 
-    <section id="PROYECTOS" class="PROYECTOS sm:max-w-[800px] pt-9 px-5 sm:px-0 sm:py-8" style="margin: auto;">
-        <h1 class="title-section row-start-1 text-[#fff] text-3xl mt-6"><i class="fa-solid fa-code"></i> Proyectos</h1>
+    <section id="PROYECTOS" class="
+    w-full min-h-[100vh] sm:max-w-[900px] p-2 mx-auto">
+        <br>
+        <br class="sm:hidden">
+        <br class="sm:hidden">
+        <h1 class="text-3xl font-bold text-white">Proyectos</h1>
+        <br>
+        <br>
+        <div class="
+        cont-proyect-buttons
+        flex gap-2 justify-center sm:justify-start">
+            <button id="Button_Landing_pages" class="w-full sm:w-[200px] bg-white/50 p-2 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/100 hover:-translate-y-1 hover:border-yellow-500/30">Landing Pages</button>
+            <button id="Button_Apps" class="w-full sm:w-[200px] bg-white/50 p-2 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/100 hover:-translate-y-1 hover:border-yellow-500/30">Apps</button>
+        </div>
 
-        <!-- WAATER APP -->
-        <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
-            h-auto my-[100px]
-            p-4 rounded-2xl bg-[#f8fafc45]">
-            <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
-                src="./src/assest/imagenes/img-portafolio/app wather.png" alt="img-portafolio">
+        <div id="cont_proyects" class="cont-proyects
+        w-full">
+            <!-- LANDING PAGES PROYECTOS -->
+            <div id="cont_landig_pages" class="
+                w-full">
 
-            <aside class="flex flex-col">
-                <h1 class="tittle-project text-[#fff] text-xl">WEATHER APP</h1>
-                <br>
-                <p class="row-span-2 row-start-2">Aplicación web del tiempo de Buenos Aires, con informacion del clima y
-                    pronostico del tiempo hecha en React</p>
-                <br>
-                <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-html5"></i> HTML</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-css3-alt"></i> CSS</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-react"></i> REACT</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-js"></i> JS</div>
-                </div>
-                <br>
-                <div class="
-                grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/Weather-app/" target="_blank">
-                        <button class="
-                            previe-buttom
-                            border border-solid border-[#0D5EA6] 
-                            text-[#fff] text-xs 
-                            h-[40px]
-                            rounded-lg shadow-md 
-                            py-2 px-8 
-                            flex items-center justify-center gap-2">Review</button></a>
-                    <button class="
-                            pc-buttom
-                            border border-solid border-[#dd1616] 
-                            text-[#fff] text-xs 
-                            h-[40px]
-                            rounded-lg shadow-md 
-                            py-2 px-8 
-                            flex items-center justify-center gap-2">only PC</button>
-                    <p class="flex items-center justify-cente"></p>
-                </div>
-            </aside>
-        </main>
-        <hr>
+                <!-- LANDING PAGE BARBERIA V2 -->
+                <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
+                h-auto my-[100px]
+                p-4 rounded-2xl bg-[#f8fafc45]">
+                    <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
+                        src="./src/assest/imagenes/img-portafolio/landing-page-Barberia-V2.png" alt="img-portafolio">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- LANDING PAGE BARBERIA V2 -->
-        <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
-            h-auto my-[100px]
-            p-4 rounded-2xl bg-[#f8fafc45]">
-            <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
-                src="./src/assest/imagenes/img-portafolio/landing-page-Barberia-V2.png" alt="img-portafolio">
-
-            <aside class="flex flex-col">
-                <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - BARBERIA V.2</h1>
-                <br>
-                <p class="row-span-2 row-start-2">Diseño de una landing page enfocada a una Barberia online</p>
-                <br>
-                <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-html5"></i> HTML</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-css3-alt"></i> CSS</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-js"></i> JS</div>
-                </div>
-                <br>
-                <div class="
-                grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/landing-page-Barberia-V2/" target="_blank"><button class="
+                    <aside class="flex flex-col">
+                        <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - BARBERIA V.2</h1>
+                        <br>
+                        <p class="row-span-2 row-start-2">Diseño de una landing page enfocada a una Barberia online</p>
+                        <br>
+                        <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-html5"></i> HTML</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-css3-alt"></i> CSS</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-js"></i> JS</div>
+                        </div>
+                        <br>
+                        <div class="
+                        grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <a href="https://jonathangamon95.github.io/landing-page-Barberia-V2/"
+                                target="_blank"><button class="
                             bg-[#093FB4] 
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
@@ -319,11 +275,11 @@
                             rounded-lg shadow-md 
                             py-2 px-8 
                             flex items-center justify-center gap-2">Review</button></a>
-                    <p class="flex items-center justify-cente"></p>
-                </div>
-            </aside>
-        </main>
-        <hr>
+                            <p class="flex items-center justify-cente"></p>
+                        </div>
+                    </aside>
+                </main>
+                <hr>
 
 
 
@@ -333,44 +289,45 @@
 
 
 
-        <!-- LANDIG TIENDA ONLINE V1-->
-        <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
-            h-auto my-[100px]
-            p-4 rounded-2xl bg-[#f8fafc45]">
-            <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
-                src="./src/assest/imagenes/img-portafolio/tienda_online_v1.png" alt="img-portafolio">
+                <!-- LANDIG TIENDA ONLINE V1-->
+                <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
+                h-auto my-[100px]
+                p-4 rounded-2xl bg-[#f8fafc45]">
+                    <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
+                        src="./src/assest/imagenes/img-portafolio/tienda_online_v1.png" alt="img-portafolio">
 
-            <aside class="flex flex-col">
-                <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - ECOMMERCE V.1 (en curso)</h1>
-                <br>
-                <p class="row-span-2 row-start-2">Diseño de una landing page para una tienda online de un emprendimiento
-                    dedicado a la venta de bolsos elegantes</p>
-                <br>
-                <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-html5"></i> HTML</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-css3-alt"></i> CSS</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-js"></i> JS</div>
-                </div>
-                <br>
-                <div class="
-                grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/Landing-page-Tienda-online-V1/" target="_blank">
-                        <button class="previe-buttom
+                    <aside class="flex flex-col">
+                        <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - ECOMMERCE V.1 (en curso)</h1>
+                        <br>
+                        <p class="row-span-2 row-start-2">Diseño de una landing page para una tienda online de un
+                            emprendimiento
+                            dedicado a la venta de bolsos elegantes</p>
+                        <br>
+                        <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-html5"></i> HTML</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-css3-alt"></i> CSS</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-js"></i> JS</div>
+                        </div>
+                        <br>
+                        <div class="
+                        grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <a href="https://jonathangamon95.github.io/Landing-page-Tienda-online-V1/" target="_blank">
+                                <button class="previe-buttom
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
                             h-[40px]
                             rounded-lg shadow-md 
                             py-2 px-8 
                             flex items-center justify-center gap-2">Review</button></a>
-                    <p class="flex items-center justify-cente"></p>
-                </div>
-            </aside>
-        </main>
-        <hr>
+                            <p class="flex items-center justify-cente"></p>
+                        </div>
+                    </aside>
+                </main>
+                <hr>
 
 
 
@@ -392,86 +349,82 @@
 
 
 
-        <!-- LANDIG ART DIGITAL V.2-->
-        <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
-            h-auto my-[100px]
-            p-4 rounded-2xl bg-[#f8fafc45]">
-            <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
-                src="./src/assest/imagenes/img-portafolio/landig-page-artDigital.png" alt="img-portafolio">
+                <!-- LANDIG ART DIGITAL V.2-->
+                <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
+                h-auto my-[100px]
+                p-4 rounded-2xl bg-[#f8fafc45]">
+                    <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
+                        src="./src/assest/imagenes/img-portafolio/landig-page-artDigital.png" alt="img-portafolio">
 
-            <aside class="flex flex-col">
-                <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - ARTE DIGITAL V.2</h1>
-                <br>
-                <p class="row-span-2 row-start-2">Diseño de una Landing Page enfocado a un servicio de Arte Digital</p>
-                <br>
-                <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-html5"></i> HTML</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-css3-alt"></i> CSS</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-js"></i> JS</div>
-                </div>
-                <br>
-                <div class="
-                grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/Dise-o---Landing-Page-Arte-Digital---V.3/"
-                        target="_blank">
-                        <button class="previe-buttom
+                    <aside class="flex flex-col">
+                        <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - ARTE DIGITAL V.2</h1>
+                        <br>
+                        <p class="row-span-2 row-start-2">Diseño de una Landing Page enfocado a un servicio de Arte
+                            Digital</p>
+                        <br>
+                        <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-html5"></i> HTML</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-css3-alt"></i> CSS</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-js"></i> JS</div>
+                        </div>
+                        <br>
+                        <div class="
+                        grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <a href="https://jonathangamon95.github.io/Dise-o---Landing-Page-Arte-Digital---V.3/"
+                                target="_blank">
+                                <button class="previe-buttom
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
                             h-[40px]
                             rounded-lg shadow-md 
                             py-2 px-8 
                             flex items-center justify-center gap-2">Review</button></a>
-                    <p class="flex items-center justify-cente"></p>
-                </div>
-            </aside>
-        </main>
-        <hr>
+                            <p class="flex items-center justify-cente"></p>
+                        </div>
+                    </aside>
+                </main>
+            </div>
 
 
 
 
+            <!-- APP PROYECTOS -->
+            <div id="cont_apps" class="hidden">
 
+                <!-- WAATER APP -->
+                <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
+                h-auto my-[100px]
+                p-4 rounded-2xl bg-[#f8fafc45]">
+                    <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
+                        src="./src/assest/imagenes/img-portafolio/app wather.png" alt="img-portafolio">
 
-
-
-
-
-
-
-
-
-        <!-- MUSIC APP -->
-        <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
-            h-auto my-[100px]
-            p-4 rounded-2xl bg-[#f8fafc45]">
-            <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
-                src="./src/assest/imagenes/img-portafolio/Music_App.jpg" alt="img-portafolio">
-
-            <aside class="flex flex-col">
-                <h1 class="tittle-project text-[#fff] text-xl">MUSIC WEB APP V1</h1>
-                <br>
-                <p class="row-span-2 row-start-2">Aplicación web de un reproductor de musica hecha en React</p>
-                <br>
-                <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-html5"></i> HTML</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-css3-alt"></i> CSS</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-react"></i> REACT</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-js"></i> JS</div>
-                </div>
-                <br>
-                <div class="
-                grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/Wep-App-Music-React-Vite/" target="_blank">
-                        <button class="
+                    <aside class="flex flex-col">
+                        <h1 class="tittle-project text-[#fff] text-xl">WEATHER APP</h1>
+                        <br>
+                        <p class="row-span-2 row-start-2">Aplicación web del tiempo de Buenos Aires, con informacion del
+                            clima y
+                            pronostico del tiempo hecha en React</p>
+                        <br>
+                        <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-html5"></i> HTML</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-css3-alt"></i> CSS</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-react"></i> REACT</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-js"></i> JS</div>
+                        </div>
+                        <br>
+                        <div class="
+                        grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <a href="https://jonathangamon95.github.io/Weather-app/" target="_blank">
+                                <button class="
                             previe-buttom
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
@@ -479,138 +432,141 @@
                             rounded-lg shadow-md 
                             py-2 px-8 
                             flex items-center justify-center gap-2">Review</button></a>
-                    <p class="flex items-center justify-cente"></p>
-                </div>
-            </aside>
-        </main>
-        <hr>
+                            <button class="
+                            pc-buttom
+                            border border-solid border-[#dd1616] 
+                            text-[#fff] text-xs 
+                            h-[40px]
+                            rounded-lg shadow-md 
+                            py-2 px-8 
+                            flex items-center justify-center gap-2">only PC</button>
+                            <p class="flex items-center justify-cente"></p>
+                        </div>
+                    </aside>
+                </main>
+                <hr>
 
 
 
+                <!-- MUSIC APP -->
+                <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
+                h-auto my-[100px]
+                p-4 rounded-2xl bg-[#f8fafc45]">
+                    <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
+                        src="./src/assest/imagenes/img-portafolio/Music_App.jpg" alt="img-portafolio">
 
-
-
-
-
-
-
-
-
-        <!-- LANDING BARBERIA V.1-->
-        <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
-            h-auto my-[100px]
-            p-4 rounded-2xl bg-[#f8fafc45]">
-            <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
-                src="./src/assest/imagenes/img-portafolio/Barberia.png" alt="img-portafolio">
-
-            <aside class="flex flex-col">
-                <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - BARBERIA V.1</h1>
-                <br>
-                <p class="row-span-2 row-start-2">Diseño de una landing page enfocada a una Barberia online, con enlaces
-                    a redes
-                    sociales y formulario para obtencion de turno online - totalmente responsive</p>
-                <br>
-                <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-html5"></i> HTML</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-css3-alt"></i> CSS</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-js"></i> JS</div>
-                </div>
-                <br>
-                <div class="
-                grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/barberia-landing/" target="_blank">
-                        <button class="previe-buttom
+                    <aside class="flex flex-col">
+                        <h1 class="tittle-project text-[#fff] text-xl">MUSIC WEB APP V1</h1>
+                        <br>
+                        <p class="row-span-2 row-start-2">Aplicación web de un reproductor de musica hecha en React</p>
+                        <br>
+                        <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-html5"></i> HTML</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-css3-alt"></i> CSS</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-react"></i> REACT</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-js"></i> JS</div>
+                        </div>
+                        <br>
+                        <div class="
+                        grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <a href="https://jonathangamon95.github.io/Wep-App-Music-React-Vite/" target="_blank">
+                                <button class="
+                            previe-buttom
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
                             h-[40px]
                             rounded-lg shadow-md 
                             py-2 px-8 
                             flex items-center justify-center gap-2">Review</button></a>
-                    <p class="flex items-center justify-cente"></p>
-                </div>
-            </aside>
-        </main>
-        <hr>
+                            <p class="flex items-center justify-cente"></p>
+                        </div>
+                    </aside>
+                </main>
+                <hr>
 
 
 
 
+                <!-- POKEDEX -->
+                <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
+                h-auto my-[100px]
+                p-4 rounded-2xl bg-[#f8fafc45]">
+                    <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
+                        src="./src/assest/imagenes/img-portafolio/pokedex_react.jpg" alt="img-portafolio">
 
-        <!-- POKEDEX -->
-        <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
-            h-auto my-[100px]
-            p-4 rounded-2xl bg-[#f8fafc45]">
-            <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
-                src="./src/assest/imagenes/img-portafolio/pokedex_react.jpg" alt="img-portafolio">
-
-            <aside class="flex flex-col">
-                <h1 class="tittle-project text-[#fff] text-xl">POKEDEX APP</h1>
-                <br>
-                <p class="row-span-2 row-start-2">Aplicación web de un buscador de Pokemones con solicitudes Api hecha
-                    en React donde podrás buscar por categorías o de forma
-                    independiente al pokemon que desees, obteniendo sus respectivos datos y características</p>
-                <br>
-                <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-html5"></i> HTML</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-css3-alt"></i> CSS</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-react"></i> REACT</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-js"></i> JS</div>
-                </div>
-                <br>
-                <div class="
-                grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/pokedex-react/" target="_blank">
-                        <button class="previe-buttom
+                    <aside class="flex flex-col">
+                        <h1 class="tittle-project text-[#fff] text-xl">POKEDEX APP</h1>
+                        <br>
+                        <p class="row-span-2 row-start-2">Aplicación web de un buscador de Pokemones con solicitudes Api
+                            hecha
+                            en React donde podrás buscar por categorías o de forma
+                            independiente al pokemon que desees, obteniendo sus respectivos datos y características</p>
+                        <br>
+                        <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-html5"></i> HTML</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-css3-alt"></i> CSS</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-react"></i> REACT</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-js"></i> JS</div>
+                        </div>
+                        <br>
+                        <div class="
+                        grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <a href="https://jonathangamon95.github.io/pokedex-react/" target="_blank">
+                                <button class="previe-buttom
                         border border-solid border-[#0D5EA6] 
                         text-[#fff] text-xs 
                         h-[40px]
                         rounded-lg shadow-md 
                         py-2 px-8 
                         flex items-center justify-center gap-2">Review</button></a>
-                    <p class="flex items-center justify-cente"></p>
-                </div>
-            </aside>
-        </main>
-        <hr>
+                            <p class="flex items-center justify-cente"></p>
+                        </div>
+                    </aside>
+                </main>
+                <hr>
 
 
 
 
 
-        <!-- MINI JUEGO -->
-        <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
-            h-auto my-[100px]
-            p-4 rounded-2xl bg-[#f8fafc45]">
-            <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
-                src="./src/assest/imagenes/img-portafolio/Mini-Juego-Adivinar-Palabras.png" alt="img-portafolio">
+                <!-- MINI JUEGO -->
+                <main data-aos="fade-up" data-aos-duration="800" class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-1 gap-2 sm:gap-5 
+                h-auto my-[100px]
+                p-4 rounded-2xl bg-[#f8fafc45]">
+                    <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
+                        src="./src/assest/imagenes/img-portafolio/Mini-Juego-Adivinar-Palabras.png"
+                        alt="img-portafolio">
 
-            <aside class="flex flex-col">
-                <h1 class="tittle-project text-[#fff] text-xl">MINI JUEGO - ADIVINA LA PALABRA - SOLO VERSION PC</h1>
-                <br>
-                <p class="row-span-2 row-start-2">Diviertete jugando con este mini juego de adivinar palabras</p>
-                <br>
-                <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-html5"></i> HTML</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-css3-alt"></i> CSS</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
-                    <div class="text-xs text-center flex items-center justify-center gap-1"><i
-                            class="fa-brands fa-js"></i> JS</div>
-                </div>
-                <br>
-                <div class="
-                grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
-                    <a href="https://jonathangamon95.github.io/juego_adivinar_la_palabra_2.0/" target="_blank">
-                        <button class="
+                    <aside class="flex flex-col">
+                        <h1 class="tittle-project text-[#fff] text-xl">MINI JUEGO - ADIVINA LA PALABRA - SOLO VERSION PC
+                        </h1>
+                        <br>
+                        <p class="row-span-2 row-start-2">Diviertete jugando con este mini juego de adivinar palabras
+                        </p>
+                        <br>
+                        <div class="skills-used grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-html5"></i> HTML</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-css3-alt"></i> CSS</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"> TAILWIND</div>
+                            <div class="text-xs text-center flex items-center justify-center gap-1"><i
+                                    class="fa-brands fa-js"></i> JS</div>
+                        </div>
+                        <br>
+                        <div class="
+                        grid [grid-template-columns:repeat(auto-fit,minmax(100px,auto))] gap-2">
+                            <a href="https://jonathangamon95.github.io/juego_adivinar_la_palabra_2.0/" target="_blank">
+                                <button class="
                             bg-[#093FB4] 
                             border border-solid border-[#0D5EA6] 
                             text-[#fff] text-xs 
@@ -618,7 +574,7 @@
                             rounded-lg shadow-md 
                             py-2 px-8 
                             flex items-center justify-center gap-2">Review</button></a>
-                    <button class="
+                            <button class="
                             pc-buttom
                             border border-solid border-[#dd1616] 
                             text-[#fff] text-xs 
@@ -626,10 +582,12 @@
                             rounded-lg shadow-md 
                             py-2 px-8 
                             flex items-center justify-center gap-2">only PC</button>
-                    <p class="flex items-center justify-cente"></p>
-                </div>
-            </aside>
-        </main>
+                            <p class="flex items-center justify-cente"></p>
+                        </div>
+                    </aside>
+                </main>
+            </div>
+        </div>
     </section>
 
 
@@ -710,7 +668,8 @@
                         flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
                         text-white font-medium
                         bg-[#2c2c54] shadow-2xl 
-                        transition-all hover:shadow-xl hover:-translate-y-1" href="./CV/JonathanGamon-CV.pdf" target="_blank">
+                        transition-all hover:shadow-xl hover:-translate-y-1" href="./CV/JonathanGamon-CV.pdf"
+                            target="_blank">
                             <span>Descargar CV</span>
                             <i class="bi bi-file-earmark-arrow-down-fill"></i>
                         </a>
@@ -719,7 +678,8 @@
                         flex items-center justify-center gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
                         text-white font-medium
                         bg-[#2c2c54] shadow-2xl 
-                        transition-all hover:shadow-xl hover:-translate-y-1" href="https://wa.me/541159541014" target="_blank">
+                        transition-all hover:shadow-xl hover:-translate-y-1" href="https://wa.me/541159541014"
+                            target="_blank">
                             <span>WhatsApp</span>
                             <i class="fab fa-whatsapp"></i>
                         </a>
@@ -768,9 +728,10 @@
 
 
 
-
+    <!-- scripts local -->
     <script src="./src/js/scroll_header_animation.js"></script>
     <script src="./src/js/themes.js"></script>
+    <script src="./src/js/change_proyect_tips.js"></script>
 
 
     <!--icon skills-->

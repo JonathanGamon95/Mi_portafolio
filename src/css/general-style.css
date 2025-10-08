@@ -77,7 +77,8 @@ main {
 .skills,
 .tittle-project,
 p,
-.skills-container {
+.skills-container,
+.cont-proyects {
     transition: 0.5s;
 }
 

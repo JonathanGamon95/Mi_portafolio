@@ -1,6 +1,6 @@
 /* ------------------------------
-    Fondo general
-   ------------------------------ */
+   Fondo general
+------------------------------ */
 body {
     background-color: #100420;
 }
@@ -22,10 +22,9 @@ body {
     background-color: #DD0303;
 }
 
-
 /* ------------------------------
-    Elementos interactivos
-   ------------------------------ */
+   Elementos interactivos
+------------------------------ */
 button {
     cursor: pointer;
 }
@@ -34,14 +33,12 @@ button {
     transform: scale(1.2);
 }
 
-
 /* ------------------------------
-    efecto vidrio (Glassmorphism)
-   ------------------------------ */
+   efecto vidrio (Glassmorphism)
+------------------------------ */
 .MENU,
 .container-hero,
-.ABOUT-ME,
-.img-perfil {
+.ABOUT-ME {
     /* sombreado */
     box-shadow: 1px -1px 37px 9px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px -1px 37px 9px rgba(0, 0, 0, 0.75);
@@ -53,31 +50,23 @@ button {
     -webkit-backdrop-filter: blur(10px);
 }
 
-
-
 /* ------------------------------
-    border
-   ------------------------------ */
+   border
+------------------------------ */
 .MENU,
 .container-hero,
 .ABOUT-ME,
-.img-perfil,
-.skills-container-inside,
 main {
     border: 1px solid rgba(255, 255, 255, 0.3);
- }
-
+}
 
 /* ------------------------------
-    Transiciones generales
-   ------------------------------ */
+   Transiciones generales
+------------------------------ */
 #body,
 .title,
-.title-section,
-.skills,
 .tittle-project,
 p,
-.skills-container,
 .cont-proyects {
     transition: 0.5s;
 }
@@ -86,16 +75,13 @@ p,
     transition: 0.1s;
 }
 
-
 /* ------------------------------
-    Tipografía en títulos/secciones
+   Tipografía en títulos/secciones
 ------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .MENU p,
 .title,
-.text-skill,
-.text-tools,
 .tittle-project,
 .about-title,
 .about-me,
@@ -103,54 +89,25 @@ p,
     font-family: 'Inter', sans-serif;
 }
 
-
 .title,
-.title-section,
-.skills,
-.tittle-project p,
-.background,
+.tittle-project,
 .about-me,
 .about-contact {
-    font-weight: 600;
-}
-
-.title,
-.text-skill,
-.text-tools,
-.tittle-project,
-.about-title {
     font-weight: 800;
-    /* mayor peso para títulos principales */
 }
-
 
 /* ------------------------------
-    Colores de texto
-   ------------------------------ */
+   Colores de texto
+------------------------------ */
 p,
 .title,
-.skills-container,
 .ABOUT-ME {
     color: aliceblue;
 }
 
-
 /* ------------------------------
-    Botones y etiquetas (skills/tools)
-   ------------------------------ */
-.btn-availability,
-.btn-network,
-.skills span,
-.tools span {
-    background: #2c2c54;
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: transform 0.3s;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-}
-
+   Skills usados en HTML
+------------------------------ */
 .skills-used div {
     background: #2c2c54;
     color: #fff;
@@ -158,25 +115,10 @@ p,
     border-radius: 8px;
 }
 
-/* botón disponibilidad */
-.btn-availability {
-    background: linear-gradient(90deg, rgb(255, 124, 231), rgb(255, 179, 71));
-    border: none;
-}
-
-/* botón red social */
-.btn-network {
-    display: inline-block;
-    transition: transform 0.2s ease;
-}
-
-.btn-network:hover {
-    transform: scale(0.9);
-}
-
 hr {
     color: aliceblue;
 }
+
 
 
 

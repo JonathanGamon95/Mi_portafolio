@@ -67,38 +67,49 @@
                 <br>
                 <button
                     class="
-                    w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">Disponible
+                    w-full 
+                    bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold 
+                    py-3 px-6 rounded-full shadow-lg 
+                    transition-all duration-300 hover:shadow-xl hover:-translate-y-1">Disponible
                     para trabajar</button>
 
                 <a class="
                 fade-in-element from-left delay-0_2s
-                flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
-                text-white font-medium
-                bg-[#2c2c54] shadow-2xl 
-                transition-all hover:shadow-xl hover:-translate-y-1"
-                    href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank">
-                    <span>LinkedIn</span>
-                    <i class="bi bi-linkedin"></i>
+                w-full" href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank">
+                    <button class="
+                    flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                    text-white font-medium
+                    bg-[#2c2c54] shadow-2xl 
+                    transition-all hover:shadow-xl hover:-translate-y-1">
+                        <span>LinkedIn</span>
+                        <i class="bi bi-linkedin"></i>
+                    </button>
                 </a>
 
                 <a class="
                 fade-in-element from-left delay-0_4s
-                flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
-                text-white font-medium
-                bg-[#2c2c54] shadow-2xl 
-                transition-all hover:shadow-xl hover:-translate-y-1" href="./CV/JonathanGamon-CV.pdf" target="_blank">
-                    <span>Descargar CV</span>
-                    <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                w-full" href="./CV/JonathanGamon-CV.pdf" target="_blank">
+                    <button class="
+                    flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                    text-white font-medium
+                    bg-[#2c2c54] shadow-2xl 
+                    transition-all hover:shadow-xl hover:-translate-y-1">
+                        <span>Descargar CV</span>
+                        <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                    </button>
                 </a>
 
                 <a class="
                 fade-in-element from-left delay-0_6s
-                flex items-center justify-center gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
-                text-white font-medium
-                bg-[#2c2c54] shadow-2xl 
-                transition-all hover:shadow-xl hover:-translate-y-1" href="https://wa.me/541159541014" target="_blank">
-                    <span>WhatsApp</span>
-                    <i class="fab fa-whatsapp"></i>
+                w-full" href="https://wa.me/541159541014" target="_blank">
+                    <button class="
+                    flex items-center justify-center gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                    text-white font-medium
+                    bg-[#2c2c54] shadow-2xl 
+                    transition-all hover:shadow-xl hover:-translate-y-1">
+                        <span>WhatsApp</span>
+                        <i class="fab fa-whatsapp"></i>
+                    </button>
                 </a>
             </div>
 
@@ -137,13 +148,15 @@
                 <div id="skills_containers" class="rounded-2xl p-6 border border-white/10 text-white">
                     <!-- Habilidades -->
                     <div class="mb-6">
-                        <h3 class="text-2xl font-semibold mb-4 flex items-center space-x-2">
+                        <h3 class="
+                        skills-title
+                        text-xl font-medium mb-4 flex items-center space-x-2">
                             <i class="bi bi-code-slash text-yellow-400"></i>
                             <span>Habilidades y Tecnologías</span>
                         </h3>
 
                         <div class="
-                        fade-in-element from-down delay-0_2s
+                        fade-in-element from-down delay-0_4s
                         grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
                             <div
                                 class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
@@ -182,13 +195,15 @@
 
                     <!-- Herramientas -->
                     <div>
-                        <h3 class="text-2xl font-semibold mb-4 flex items-center space-x-2">
+                        <h3 class="
+                        skills-title
+                        text-xl font-medium mb-4 flex items-center space-x-2">
                             <i class="bi bi-tools text-yellow-400"></i>
                             <span>Herramientas</span>
                         </h3>
 
                         <div class="
-                        fade-in-element from-down delay-0_2s
+                        fade-in-element from-down delay-0_4s
                         grid grid-cols-2 sm:grid-cols-4 gap-3">
                             <div
                                 class="box-skill flex flex-col items-center justify-center space-y-2 bg-white/5 py-4 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/10 hover:-translate-y-1 hover:border-yellow-500/30">
@@ -241,8 +256,18 @@
         <div class="
         cont-proyect-buttons
         flex gap-2 justify-center sm:justify-start">
-            <button id="Button_Landing_pages" class="w-full sm:w-[200px] bg-white/50 p-2 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/100 hover:-translate-y-1 hover:border-yellow-500/30">🖥️ Landing Pages</button>
-            <button id="Button_Apps" class="w-full sm:w-[200px] bg-white/50 p-2 rounded-xl border border-white/10 transition-all duration-300 hover:bg-white/100 hover:-translate-y-1 hover:border-yellow-500/30">📱 Apps</button>
+            <button id="Button_Landing_pages"
+                class="
+                w-full sm:w-[200px] bg-white/50 
+                p-2 rounded-xl border border-white/10 font-medium
+                transition-all duration-300 hover:bg-white/100 hover:-translate-y-1 hover:border-yellow-500/30">🖥️
+                Landing Pages</button>
+            <button id="Button_Apps"
+                class="
+                w-full sm:w-[200px] bg-white/50 
+                p-2 rounded-xl border border-white/10 font-medium
+                transition-all duration-300 hover:bg-white/100 hover:-translate-y-1 hover:border-yellow-500/30">📱
+                Apps</button>
         </div>
 
         <div id="cont_proyects" class="cont-proyects
@@ -258,7 +283,8 @@
                 h-auto my-[100px]
                 p-4 rounded-2xl bg-[#f8fafc45]">
                     <img class="h-[300px] w-full object-cover mt-0 rounded-[10px] m-auto"
-                        src="./src/assest/imagenes/img-portafolio/landing-page-Barberia-V2-new.webp" alt="img-portafolio">
+                        src="./src/assest/imagenes/img-portafolio/landing-page-Barberia-V2-new.webp"
+                        alt="img-portafolio">
 
                     <aside class="flex flex-col">
                         <h1 class="tittle-project text-[#fff] text-xl">LANDING PAGE - BARBERIA V.2</h1>
@@ -638,7 +664,7 @@
             <div class="text-center py-4 rounded-2xl">
                 <h1 class="
                 fade-in-element from-down delay-0_4s
-                about-title text-3xl sm:text-4xl">Jonathan Gamon</h1>
+                about-title text-3xl sm:text-4xl font-bold">Jonathan Gamon</h1>
                 <br>
                 <p class="
                 fade-in-element from-down delay-0_6s
@@ -685,37 +711,44 @@
                         text-xl text-center"><i class="fa-solid fa-envelope" aria-hidden="true"></i>
                             jonygamon@gmail.com</p>
                         <br>
+
                         <a class="
-                        fade-in-element from-center delay-0_4s
-                        flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
-                        text-white font-medium
-                        bg-[#2c2c54] shadow-2xl 
-                        transition-all hover:shadow-xl hover:-translate-y-1"
-                            href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank">
-                            <span>LinkedIn</span>
-                            <i class="bi bi-linkedin"></i>
+                        fade-in-element from-left delay-0_2s
+                        w-full" href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank">
+                            <button class="
+                            flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                            text-white font-medium
+                            bg-[#2c2c54] shadow-2xl 
+                            transition-all hover:shadow-xl hover:-translate-y-1">
+                                <span>LinkedIn</span>
+                                <i class="bi bi-linkedin"></i>
+                            </button>
                         </a>
 
                         <a class="
-                        fade-in-element from-center delay-0_6s
-                        flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
-                        text-white font-medium
-                        bg-[#2c2c54] shadow-2xl 
-                        transition-all hover:shadow-xl hover:-translate-y-1" href="./CV/JonathanGamon-CV.pdf"
-                            target="_blank">
-                            <span>Descargar CV</span>
-                            <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                        fade-in-element from-left delay-0_4s
+                        w-full" href="./CV/JonathanGamon-CV.pdf" target="_blank">
+                            <button class="
+                            flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                            text-white font-medium
+                            bg-[#2c2c54] shadow-2xl 
+                            transition-all hover:shadow-xl hover:-translate-y-1">
+                                <span>Descargar CV</span>
+                                <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                            </button>
                         </a>
 
                         <a class="
-                        fade-in-element from-center delay-0_8s
-                        flex items-center justify-center gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
-                        text-white font-medium
-                        bg-[#2c2c54] shadow-2xl 
-                        transition-all hover:shadow-xl hover:-translate-y-1" href="https://wa.me/541159541014"
-                            target="_blank">
-                            <span>WhatsApp</span>
-                            <i class="fab fa-whatsapp"></i>
+                        fade-in-element from-left delay-0_6s
+                        w-full" href="https://wa.me/541159541014" target="_blank">
+                            <button class="
+                            flex items-center justify-center gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
+                            text-white font-medium
+                            bg-[#2c2c54] shadow-2xl 
+                            transition-all hover:shadow-xl hover:-translate-y-1">
+                                <span>WhatsApp</span>
+                                <i class="fab fa-whatsapp"></i>
+                            </button>
                         </a>
                     </div>
                 </div>

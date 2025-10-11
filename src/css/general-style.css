@@ -85,7 +85,8 @@ p,
 .tittle-project,
 .about-title,
 .about-me,
-.about-contact {
+.about-contact,
+.skills-title {
     font-family: 'Inter', sans-serif;
 }
 

@@ -14,7 +14,7 @@ let tema_actual = "tema-oscuro"
 function cambio_de_tema() {
     if (tema_actual === "tema-oscuro") {
         BOTON_TEMA.style.background = "#100420"
-        BODY.style.background = "#b2babb"
+        BODY.style.background = "aliceblue"
         CONTAINER_HERO.style.backgroundColor = "aliceblue"
         SKILL_CONTAINER.style.color = "#100420"
         SKILL_CONTAINER.setAttribute("class", "rounded-2xl p-6 border border-black/10 text-white")

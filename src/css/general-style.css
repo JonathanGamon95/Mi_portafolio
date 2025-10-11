@@ -150,6 +150,35 @@ hr {
 
 
 
+/* animacion de aparecimiento */
+/* ===== Animación base ===== */
+.fade-in-element {
+  opacity: 0;
+  transform: translate(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* ===== Estado visible ===== */
+.fade-in-element.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* ===== Direcciones ===== */
+.from-left   { transform: translateX(-50px); }
+.from-right  { transform: translateX(50px); }
+.from-up     { transform: translateY(50px); }
+.from-down   { transform: translateY(-50px); }
+.from-center { transform: scale(0.95); }
+.from-center.visible { transform: scale(1); }
+
+/* ===== Delays personalizables ===== */
+.delay-0s { transition-delay: 0s; }
+.delay-0_2s { transition-delay: 0.2s; }
+.delay-0_4s { transition-delay: 0.4s; }
+.delay-0_6s { transition-delay: 0.6s; }
+.delay-0_8s { transition-delay: 0.8s; }
+.delay-1s { transition-delay: 1s; }
 
 
 

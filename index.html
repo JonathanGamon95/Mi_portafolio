@@ -26,7 +26,7 @@
 <body id="body">
 
     <header class="fixed top-0 w-full h-[60px] sm:h-[50px] flex sm:justify-center sm:items-center z-10">
-        <div class="MENU w-full h-full sm:w-[350px] sm:h-[30px] sm:rounded-full grid grid-cols-4 grid-rows-1 gap-2">
+        <div class="MENU w-full h-full sm:w-[350px] sm:h-[30px] bg-white/10 backdrop-blur-xl border border-white/10 sm:rounded-full grid grid-cols-4 grid-rows-1 gap-2">
             <p id="BOTON_INICIO" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none">Inicio</p>
             <p id="BOTON_PROYECTOS" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none">Proyectos</p>
             <p id="BOTON_SOBRE_MI" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none">Sobre Mi</p>
@@ -256,28 +256,34 @@
         cont-proyect-buttons
         flex gap-2 justify-center sm:justify-start">
             <button id="Button_Landing_pages" class="
-                w-full sm:w-[200px] bg-white/50 
-                p-2 rounded-xl border border-white/10 font-medium
-                transition-all duration-300 hover:bg-white/100 hover:-translate-y-1 hover:border-yellow-500/30">🖥️
+            button_proyect_tipe
+            w-full sm:w-[200px]
+            flex gap-2 p-2 justify-center border border-white/20 rounded-xl
+            text-white font-medium
+            bg-[#2c2c54] shadow-2xl 
+            transition-all hover:shadow-xl hover:-translate-y-1">🖥️
                 Landing Pages</button>
             <button id="Button_Apps" class="
-                w-full sm:w-[200px] bg-white/50 
-                p-2 rounded-xl border border-white/10 font-medium
-                transition-all duration-300 hover:bg-white/100 hover:-translate-y-1 hover:border-yellow-500/30">📱
+            button_proyect_tipe
+            w-full sm:w-[200px]
+            flex gap-2 p-2 justify-center border border-white/20 rounded-xl
+            text-white font-medium
+            bg-[#2c2c54] shadow-2xl 
+            transition-all hover:shadow-xl hover:-translate-y-1">📱
                 Apps</button>
         </div>
 
-        <div id="cont_proyects" class="cont-proyects
-        w-full">
+        <div id="cont_proyects" class="
+        cont_proyects w-full">
             <!-- LANDING PAGES PROYECTOS -->
-            <div id="cont_landig_pages" class="
-                w-full">
+            <div id="cont_landig_pages" class="w-full">
 
                 <!-- LANDING PAGE BARBERIA V2 -->
                 <main class="
+                proyects_container
                     fade-in-element from-up delay-0_2s
                     flex flex-col md:flex-row items-center justify-between 
-                    bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg p-6 md:p-10 gap-6 
+                    rounded-2xl shadow-lg p-6 md:p-10 gap-6 
                     border border-white/10 max-w-6xl mx-auto my-[100px]">
                     <!-- Preview izquierda -->
                     <div class="flex-1 w-full">
@@ -319,10 +325,7 @@
                         </div>
                     </div>
                 </main>
-                <hr>
-
-
-
+                <hr class="line">
 
 
 
@@ -331,9 +334,10 @@
 
                 <!-- LANDIG TIENDA ONLINE V1-->
                 <main class="
+                proyects_container
                     fade-in-element from-up delay-0_2s
                     flex flex-col md:flex-row items-center justify-between 
-                    bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg p-6 md:p-10 gap-6 
+                    rounded-2xl shadow-lg p-6 md:p-10 gap-6 
                     border border-white/10 max-w-6xl mx-auto my-[100px]">
                     <!-- Preview izquierda -->
                     <div class="flex-1 w-full">
@@ -376,22 +380,7 @@
                         </div>
                     </div>
                 </main>
-                <hr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <hr class="line">
 
 
 
@@ -400,9 +389,10 @@
 
                 <!-- LANDIG ART DIGITAL V.2-->
                 <main class="
+                proyects_container
                     fade-in-element from-up delay-0_2s
                     flex flex-col md:flex-row items-center justify-between 
-                    bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg p-6 md:p-10 gap-6 
+                    rounded-2xl shadow-lg p-6 md:p-10 gap-6 
                     border border-white/10 max-w-6xl mx-auto my-[100px]">
                     <!-- Preview izquierda -->
                     <div class="flex-1 w-full">
@@ -455,9 +445,10 @@
 
                 <!-- WAATER APP -->
                 <main class="
+                proyects_container
                     fade-in-element from-up delay-0_2s
                     flex flex-col md:flex-row items-center justify-between 
-                    bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg p-6 md:p-10 gap-6 
+                    rounded-2xl shadow-lg p-6 md:p-10 gap-6 
                     border border-white/10 max-w-6xl mx-auto my-[100px]">
                     <!-- Preview izquierda -->
                     <div class="flex-1 w-full">
@@ -506,15 +497,19 @@
                         </div>
                     </div>
                 </main>
-                <hr>
+                <hr class="line">
+
+
+
 
 
 
                 <!-- MUSIC APP -->
                 <main class="
+                proyects_container
                     fade-in-element from-up delay-0_2s
                     flex flex-col md:flex-row items-center justify-between 
-                    bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg p-6 md:p-10 gap-6 
+                    rounded-2xl shadow-lg p-6 md:p-10 gap-6 
                     border border-white/10 max-w-6xl mx-auto my-[100px]">
                     <!-- Preview izquierda -->
                     <div class="flex-1 w-full">
@@ -557,16 +552,19 @@
                         </div>
                     </div>
                 </main>
-                <hr>
+                <hr class="line">
+
+
 
 
 
 
                 <!-- POKEDEX -->
                 <main class="
+                proyects_container
                     fade-in-element from-up delay-0_2s
                     flex flex-col md:flex-row items-center justify-between 
-                    bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg p-6 md:p-10 gap-6 
+                    rounded-2xl shadow-lg p-6 md:p-10 gap-6 
                     border border-white/10 max-w-6xl mx-auto my-[100px]">
                     <!-- Preview izquierda -->
                     <div class="flex-1 w-full">
@@ -610,7 +608,8 @@
                         </div>
                     </div>
                 </main>
-                <hr>
+                <hr class="line">
+
 
 
 
@@ -618,9 +617,10 @@
 
                 <!-- MINI JUEGO -->
                 <main class="
+                proyects_container
                     fade-in-element from-up delay-0_2s
                     flex flex-col md:flex-row items-center justify-between 
-                    bg-white/10 backdrop-blur-xl rounded-2xl shadow-lg p-6 md:p-10 gap-6 
+                    rounded-2xl shadow-lg p-6 md:p-10 gap-6 
                     border border-white/10 max-w-6xl mx-auto my-[100px]">
                     <!-- Preview izquierda -->
                     <div class="flex-1 w-full">

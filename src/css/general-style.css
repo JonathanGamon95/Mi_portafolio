@@ -10,9 +10,10 @@ body {
     background-color: #1f1f3d;
 }
 
-.MENU {
-    background: rgba(255, 255, 255, 0.1);
+.proyects_container {
+    background-color: #1f1f3d;
 }
+
 
 .previe-buttom {
     background-color: #363bd9;
@@ -67,7 +68,7 @@ main {
 .title,
 .tittle-project,
 p,
-.cont-proyects {
+.cont_proyects {
     transition: 0.5s;
 }
 

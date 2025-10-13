@@ -1,20 +1,22 @@
 const BOTON_TEMA = document.getElementById("BOTON_TEMA");
-const BODY = document.getElementById("body")
-const CONTAINER_HERO = document.getElementById("container_hero")
+const BODY = document.getElementById("body");
+const CONTAINER_HERO = document.getElementById("container_hero");
 const SKILL_CONTAINER = document.getElementById("skills_containers");
 const ABOUT_ME = document.getElementById("ABOUT_ME");
 
 const ETIQUETAS_P = document.querySelectorAll("p");
 const ETIQUETAS_H1 = document.querySelectorAll("h1");
 const SPAM_TITULO = document.getElementById("nombre_portafolio");
-const BOX_SKILLS = document.querySelectorAll(".box-skill")
+const BOX_SKILLS = document.querySelectorAll(".box-skill");
 const LINE = document.querySelectorAll(".line");
+const PROYECTS_CONTAINERS = document.querySelectorAll(".proyects_container");
+const BUTTON_PROYECTS_TIPE = document.querySelectorAll(".button_proyect_tipe");
 
 let tema_actual = "tema-oscuro"
 function cambio_de_tema() {
     if (tema_actual === "tema-oscuro") {
         BOTON_TEMA.style.background = "#100420"
-        BODY.style.background = "aliceblue"
+        BODY.style.background = "#f5f7fa"
         CONTAINER_HERO.style.backgroundColor = "aliceblue"
         SKILL_CONTAINER.style.color = "#100420"
         SKILL_CONTAINER.setAttribute("class", "rounded-2xl p-6 border border-black/10 text-white")
@@ -35,6 +37,15 @@ function cambio_de_tema() {
 
         for (let g of LINE) {
             g.style.color = "#100420"
+        }
+
+        for (let f of PROYECTS_CONTAINERS) {
+            f.style.backgroundColor = "aliceblue"
+        }
+
+        for (let h of BUTTON_PROYECTS_TIPE) {
+            h.style.backgroundColor = "aliceblue"
+            h.style.color = "#100420"
         }
 
         tema_actual = "tema-claro"
@@ -61,6 +72,15 @@ function cambio_de_tema() {
 
         for (let g of LINE) {
             g.style.color = "aliceblue"
+        }
+
+        for (let f of PROYECTS_CONTAINERS) {
+            f.style.backgroundColor = "#1a1a2e"
+        }
+
+        for (let h of BUTTON_PROYECTS_TIPE) {
+            h.style.backgroundColor = "#1a1a2e"
+            h.style.color = "#fff"
         }
 
         tema_actual = "tema-oscuro"

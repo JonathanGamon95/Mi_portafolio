@@ -25,8 +25,6 @@ function changeSections(selecSection) {
         // se desactiva los botones
         LANDING_PAGES.disabled = true;
         APPS.disabled = true;
-
-        console.log("cambio 1 correctamente");
     }
 
 
@@ -43,7 +41,5 @@ function changeSections(selecSection) {
         // se activa los botones
         LANDING_PAGES.disabled = false;
         APPS.disabled = false;
-
-        console.log("cambio 2 correctamente")
     }, 1000)
 }

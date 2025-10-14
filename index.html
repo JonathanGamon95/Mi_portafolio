@@ -26,10 +26,13 @@
 <body id="body">
 
     <header class="fixed top-0 w-full h-[60px] sm:h-[50px] flex sm:justify-center sm:items-center z-10">
-        <div class="MENU w-full h-full sm:w-[350px] sm:h-[30px] bg-white/10 backdrop-blur-xl border border-white/10 sm:rounded-full grid grid-cols-4 grid-rows-1 gap-2">
-            <p id="BOTON_INICIO" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none">Inicio</p>
-            <p id="BOTON_PROYECTOS" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none">Proyectos</p>
-            <p id="BOTON_SOBRE_MI" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none">Sobre Mi</p>
+        <div id="MENU" class="MENU 
+        w-full h-full sm:w-[350px] sm:h-auto 
+        border border-white/10 p-2 sm:rounded-full 
+        flex place-content-between gap-2">
+            <p id="BOTON_INICIO" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none"><i class="bi bi-house-fill"></i> Inicio</p>
+            <p id="BOTON_PROYECTOS" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none"><i class="bi bi-braces-asterisk"></i> Proyectos</p>
+            <p id="BOTON_SOBRE_MI" class="cursor-pointer text-[#fff] text-[15px] m-auto select-none"><i class="bi bi-person-circle"></i> Sobre Mi</p>
             <button id="BOTON_TEMA" class="col-start-4 bg-[#fff] w-[20px] h-[20px] rounded-full m-auto"></button>
         </div>
     </header>
@@ -46,7 +49,7 @@
     flex items-center justify-center relative">
         <div id="container_hero" class="
         container-hero
-        fade-in-element from-center
+        fade-in-element from-center delay-0_2s
         sm:max-w-[1200px] sm:h-auto p-4 sm:rounded-2xl
         sm:grid grid-cols-3 md:grid-cols-4 grid-rows-4 gap-x-6">
             <br class="sm:hidden">
@@ -73,7 +76,7 @@
                     para trabajar</button>
 
                 <a class="
-                fade-in-element from-left delay-0_2s
+                fade-in-element from-left delay-0_4s
                 w-full" href="https://www.linkedin.com/in/jonathan-elias-gamon/" target="_blank">
                     <button class="
                     flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
@@ -86,7 +89,7 @@
                 </a>
 
                 <a class="
-                fade-in-element from-left delay-0_4s
+                fade-in-element from-left delay-0_6s
                 w-full" href="./CV/JonathanGamon-CV.pdf" target="_blank">
                     <button class="
                     flex gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
@@ -99,7 +102,7 @@
                 </a>
 
                 <a class="
-                fade-in-element from-left delay-0_6s
+                fade-in-element from-left delay-0_8s
                 w-full" href="https://wa.me/541159541014" target="_blank">
                     <button class="
                     flex items-center justify-center gap-2 w-full p-2 justify-center border border-white/20 rounded-xl
@@ -261,7 +264,7 @@
             flex gap-2 p-2 justify-center border border-white/20 rounded-xl
             text-white font-medium
             bg-[#2c2c54] shadow-2xl 
-            transition-all hover:shadow-xl hover:-translate-y-1">🖥️
+            transition-transform transition-shadow hover:shadow-xl hover:-translate-y-1">🖥️
                 Landing Pages</button>
             <button id="Button_Apps" class="
             button_proyect_tipe
@@ -269,7 +272,7 @@
             flex gap-2 p-2 justify-center border border-white/20 rounded-xl
             text-white font-medium
             bg-[#2c2c54] shadow-2xl 
-            transition-all hover:shadow-xl hover:-translate-y-1">📱
+            transition-transform transition-shadow hover:shadow-xl hover:-translate-y-1">📱
                 Apps</button>
         </div>
 

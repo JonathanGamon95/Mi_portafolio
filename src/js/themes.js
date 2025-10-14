@@ -1,5 +1,6 @@
 const BOTON_TEMA = document.getElementById("BOTON_TEMA");
 const BODY = document.getElementById("body");
+const MENU = document.getElementById("MENU");
 const CONTAINER_HERO = document.getElementById("container_hero");
 const SKILL_CONTAINER = document.getElementById("skills_containers");
 const ABOUT_ME = document.getElementById("ABOUT_ME");
@@ -17,6 +18,7 @@ function cambio_de_tema() {
     if (tema_actual === "tema-oscuro") {
         BOTON_TEMA.style.background = "#100420"
         BODY.style.background = "#f5f7fa"
+        MENU.style.background = "#f5f7fa"
         CONTAINER_HERO.style.backgroundColor = "aliceblue"
         SKILL_CONTAINER.style.color = "#100420"
         SKILL_CONTAINER.setAttribute("class", "rounded-2xl p-6 border border-black/10 text-white")
@@ -52,6 +54,7 @@ function cambio_de_tema() {
     } else {
         BOTON_TEMA.style.background = "#fff"
         BODY.style.background = "#100420"
+        MENU.style.background = "#1f1f3d"
         CONTAINER_HERO.style.backgroundColor = "#1f1f3d"
         SKILL_CONTAINER.style.color = "#fff"
         SKILL_CONTAINER.setAttribute("class", "rounded-2xl p-6 border border-white/10 text-white")

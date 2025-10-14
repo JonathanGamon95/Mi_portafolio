@@ -10,6 +10,7 @@ body {
     background-color: #1f1f3d;
 }
 
+.MENU,
 .proyects_container {
     background-color: #1f1f3d;
 }
@@ -64,16 +65,12 @@ main {
 /* ------------------------------
    Transiciones generales
 ------------------------------ */
-#body,
-.title,
-.tittle-project,
-p,
 .cont_proyects {
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 #BOTON_TEMA {
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 /* ------------------------------
